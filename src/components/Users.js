@@ -73,7 +73,7 @@ export const Users = [
     },
     {
         "id":10,
-        "name": "Chementina DuBuque",
+        "name": "Clementina DuBuque",
         "username":"yash",
         "email":"yash123@gmail.com",
         "phone":"57174544431",
