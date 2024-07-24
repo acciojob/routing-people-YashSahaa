@@ -4,7 +4,7 @@ export const Users = [
         "name": "Leanne Graham",
         "username":"Bret",
         "email":"Sincere@april.biz",
-        "phone":"1-770-736-8031",
+        "phone":"1-770-736-8031 x56442",
         "website":"hildegard.org",
     },
     {
@@ -12,8 +12,8 @@ export const Users = [
         "name": "Ervin Howell",
         "username":"Antonette",
         "email":"Shanna@melissa.tv",
-        "phone":"100-692-6593",
-        "website":"yash.com",
+        "phone":"010-692-6593 x09125",
+        "website":"anastasia.net",
     },
     {
         "id":3,
@@ -28,7 +28,7 @@ export const Users = [
         "name": "Patricia Lebsack",
         "username":"Karianne",
         "email":"Julianne.OConner@kory.org",
-        "phone":"493-170-9623",
+        "phone":"493-170-9623 x156",
         "website":"kale.biz",
     },
     {
