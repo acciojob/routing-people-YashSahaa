@@ -11,11 +11,11 @@ const Userdetails = ()=>{
     return (
         <div>
             <h1>User Details</h1>
-            <p>Name:{user.name}</p>
-            <p>Username:{user.username}</p>
-            <p>Email:{user.email}</p>
-            <p>Phone:{user.phone}</p>
-            <p>Website:{user.website}</p>
+            <p><bold>Name: </bold>{user.name}</p>
+            <p><bold>Username: </bold>{user.username}</p>
+            <p><bold>Email: </bold>{user.email}</p>
+            <p><bold>Phone: </bold>{user.phone}</p>
+            <p><bold>Website: </bold>{user.website}</p>
         </div>
     );
 }
