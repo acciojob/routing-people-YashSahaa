@@ -1,21 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 const Userdetails = ()=>{
     const location = useLocation();
     const {user} = location.state ||{};
+    const [loading, setLoading] = useState(true);
 
-    if (!user) {
-        return <h2>User not found</h2>;
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setLoading(false);
+      }, 1000);
+  
+      return () => clearTimeout(timer); 
+    }, []);
+  
+    if (loading) {
+      return <p>Loading...</p>;
     }
+
     return (
         <div>
             <h1>User Details</h1>
-            <p><bold>Name: </bold>{user.name}</p>
-            <p><bold>Username: </bold>{user.username}</p>
-            <p><bold>Email: </bold>{user.email}</p>
-            <p><bold>Phone: </bold>{user.phone}</p>
-            <p><bold>Website: </bold>{user.website}</p>
+            <p><b>Name: </b>{user.name}</p>
+            <p><b>Username: </b>{user.username}</p>
+            <p><b>Email: </b>{user.email}</p>
+            <p><b>Phone: </b>{user.phone}</p>
+            <p><b>Website: </b>{user.website}</p>
         </div>
     );
 }
